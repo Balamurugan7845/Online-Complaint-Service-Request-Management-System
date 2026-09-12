@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Service Request</title>
+  </head>
+  <body>
+    <h1>Submit Service Request</h1>
+    <form
+      action="request-status.html"
+      method="get"
+      enctype="multipart/form-data"
+    >
+      <label>Request ID:</label
+      ><input type="text" name="request_id" /><br /><br />
+      <label>Service Category:</label
+      ><select name="category">
+        <option>Maintenance</option>
+        <option>Certificate</option>
+        <option>Technical Support</option>
+        <option>Public Service</option>
+        <option>Other</option></select
+      ><br /><br />
+      <label>Service Type:</label
+      ><input type="text" name="service_type" required /><br /><br />
+      <label>Subject:</label
+      ><input type="text" name="subject" required /><br /><br />
+      <label>Description:</label
+      ><textarea name="description" rows="6" cols="50" required></textarea
+      ><br /><br />
+      <label>Required Date:</label
+      ><input type="date" name="required_date" /><br /><br />
+      <label>Location:</label><input type="text" name="location" /><br /><br />
+      <label>Additional Information:</label
+      ><textarea name="additional_info" rows="4" cols="50"></textarea
+      ><br /><br />
+      <label>Attachment:</label
+      ><input type="file" name="attachment" /><br /><br />
+      <button type="submit">Submit Request</button>
+      <button type="reset">Reset</button>
+    </form>
+    <p><a href="dashboard.html">Dashboard</a></p>
+  </body>
+</html>

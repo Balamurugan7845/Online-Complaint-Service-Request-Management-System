@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Submit Complaint</title>
+  </head>
+  <body>
+    <h1>Submit Complaint</h1>
+    <form
+      action="complaint-status.html"
+      method="get"
+      enctype="multipart/form-data"
+    >
+      <label>Complaint ID:</label
+      ><input type="text" name="complaint_id" /><br /><br />
+      <label>Category:</label
+      ><select name="category" required>
+        <option value="">Select Category</option>
+        <option>Infrastructure</option>
+        <option>Electricity</option>
+        <option>Water Supply</option>
+        <option>Sanitation</option>
+        <option>Transport</option>
+        <option>Other</option></select
+      ><br /><br />
+      <label>Subject:</label
+      ><input type="text" name="subject" required /><br /><br />
+      <label>Description:</label
+      ><textarea name="description" rows="6" cols="50" required></textarea
+      ><br /><br />
+      <label>Location:</label><input type="text" name="location" /><br /><br />
+      <label>Priority:</label
+      ><select name="priority">
+        <option>Low</option>
+        <option selected>Medium</option>
+        <option>High</option>
+        <option>Urgent</option></select
+      ><br /><br />
+      <label>Date:</label><input type="date" name="date" /><br /><br />
+      <label>Attachment:</label
+      ><input type="file" name="attachment" /><br /><br />
+      <button type="submit">Submit Complaint</button>
+      <button type="reset">Reset</button>
+    </form>
+    <p><a href="dashboard.html">Dashboard</a></p>
+  </body>
+</html>

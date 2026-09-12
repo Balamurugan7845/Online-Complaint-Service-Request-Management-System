@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Request Details</title>
+  </head>
+  <body>
+    <h1>Service Request Details</h1>
+    <table border="1" cellpadding="8">
+      <tr>
+        <th>Request ID</th>
+        <td>REQ-0001</td>
+      </tr>
+      <tr>
+        <th>User</th>
+        <td>Sample User</td>
+      </tr>
+      <tr>
+        <th>Service Type</th>
+        <td>Maintenance</td>
+      </tr>
+      <tr>
+        <th>Subject</th>
+        <td>Sample Request</td>
+      </tr>
+      <tr>
+        <th>Description</th>
+        <td>Service request description.</td>
+      </tr>
+      <tr>
+        <th>Department</th>
+        <td>General</td>
+      </tr>
+      <tr>
+        <th>Assigned Staff</th>
+        <td>Not Assigned</td>
+      </tr>
+    </table>
+    <form>
+      <h2>Update Request</h2>
+      <label>Assign Staff:</label><input type="text" /><br /><br /><label
+        >Status:</label
+      ><select>
+        <option>Pending</option>
+        <option>In Progress</option>
+        <option>Completed</option>
+        <option>Rejected</option></select
+      ><br /><br /><label>Completion Details:</label
+      ><textarea rows="5" cols="50"></textarea><br /><br /><button>
+        Update
+      </button>
+    </form>
+    <p><a href="service-requests.html">Back</a></p>
+  </body>
+</html>
